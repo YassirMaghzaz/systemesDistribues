@@ -12,7 +12,7 @@ public class Client extends personne implements clientInt {
     public void Afficher() {
         super.Afficher();
         if (compte != null) {
-            System.out.println("Compte: " + compte.afficher());
+            compte.afficher();
         }
     }
 }
