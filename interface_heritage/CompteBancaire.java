@@ -1,3 +1,4 @@
+package interface_heritage;
 public class CompteBancaire {
     private int numeroCompte;
     private double solde;
