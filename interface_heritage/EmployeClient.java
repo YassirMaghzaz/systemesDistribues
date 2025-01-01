@@ -9,6 +9,11 @@ public class EmployeClient extends Employe implements clientInt {
     }
 
     @Override
+    public CompteBancaire getCompte() {
+       return compte;
+    }
+
+    @Override
     public void Afficher() {
         super.Afficher();
         if (compte != null) {
