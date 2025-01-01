@@ -19,4 +19,14 @@ public class Employe extends personne implements EmployeInt {
         super.Afficher();
         System.out.println("Fonction: "+ fonction+ ", Salaire: "+ salaire);
     }
+
+    @Override
+    public String getFonction() {
+        return fonction;
+    }
+
+    @Override
+    public double getSalaire() {
+        return salaire;
+    }
 }

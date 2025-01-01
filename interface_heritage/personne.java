@@ -25,4 +25,19 @@ public class personne implements personneInt {
     public void setAdresse(String Adresse) {
         this.adresse = Adresse;
     }
+
+    @Override
+    public String getNom() {
+        return nom;
+    }
+
+    @Override
+    public String getPrenom() {
+        return prenom;
+    }
+
+    @Override
+    public String getAdresse() {
+        return adresse;
+    }
 }

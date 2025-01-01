@@ -5,4 +5,7 @@ public interface personneInt {
     void setNom(String nom);
     void setPrenom(String prenom);
     void setAdresse(String adresse);
+    String getNom();
+    String getPrenom();
+    String getAdresse();
 }
