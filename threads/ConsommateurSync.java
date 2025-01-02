@@ -18,7 +18,7 @@ public class ConsommateurSync extends Thread {
         while(nbreLus < n) {
             if (nbreLus >= producteur.nbreEcrits) {
                 try {
-                    this.sleep(2000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
