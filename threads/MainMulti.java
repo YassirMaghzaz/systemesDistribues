@@ -13,13 +13,13 @@ public class MainMulti {
         producteur2.start();
         consommateur.start();
 
-        try {
-            producteur1.join();
-            producteur2.join();
-            consommateur.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        // try {
+        //     producteur1.join();
+        //     producteur2.join();
+        //     consommateur.join();
+        // } catch (InterruptedException e) {
+        //     e.printStackTrace();
+        // }
 
         System.out.println("Tous les threads ont terminé !");
     }
