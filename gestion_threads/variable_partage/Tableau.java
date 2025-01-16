@@ -9,7 +9,7 @@ public class Tableau {
         indice = 0;
     }
 
-    public void Lire() {
+    public synchronized void Lire() {
         System.out.println("Lu : " + tab[indice]);
         indice++;
     }
