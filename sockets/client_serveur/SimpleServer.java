@@ -13,6 +13,7 @@ public class SimpleServer {
                 try (Socket s = SS.accept();
                 BufferedReader in = new BufferedReader( new InputStreamReader(s.getInputStream()));
                 PrintWriter out = new PrintWriter(s.getOutputStream(), true)) {
+                    System.out.println("Client connected");
                     String message = in.readLine();
                     System.out.println("Message reçu : "+ message);
                     out.println("Message reçu par le serveur : "+ message);
