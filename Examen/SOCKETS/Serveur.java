@@ -20,13 +20,14 @@ public class Serveur {
             //Demander à l'utilisateur le nom du serveur
             System.out.println("Saisir le nom du serveur : ");
             String serveurNom = consoleInput.readLine();
-
+            System.out.println("Nouveau Nom du serveur :  "+ serveurNom);
+            
             //Recevoir deux messages de chez l'utilisateur
             for (int i = 0; i < 2; i++) {
                 String message = in.readLine();
-                System.out.println("Message Reçu du client : "+ message);
+                System.out.println("Message Reçu du client - "+ message);
 
-                String acquittement = serveurNom + "acquitement pour le message:  " + message;
+                String acquittement = serveurNom + " pour le message : " + message;
                 out.println(acquittement);
             }
             S.close();

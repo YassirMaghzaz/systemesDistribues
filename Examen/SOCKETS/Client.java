@@ -15,24 +15,25 @@ public class Client {
 
             System.out.println("Entrez votre nom : "); 
             String clientNom = consoleInput.readLine();
+            System.out.println("Nouveau Nom du client :  "+ clientNom);
 
             // Premier message 
             System.out.println("Entrez le premier message : "); 
             String premierMessage = consoleInput.readLine(); 
-            out.println(clientNom + ": " + premierMessage);
+            out.println(clientNom + " : " + premierMessage);
 
             // Réception de l'acquittement du serveur 
             String acquittement1 = in.readLine(); 
-            System.out.println("Acquittement reçu : " + acquittement1); 
+            System.out.println("Acquittement reçu de " + acquittement1); 
 
             // Deuxième message 
             System.out.println("Entrez le deuxième message : "); 
             String deuxiemeMessage = consoleInput.readLine(); 
-            out.println(clientNom + ": " + deuxiemeMessage); 
+            out.println(clientNom + " : " + deuxiemeMessage); 
 
             // Réception de l'acquittement du serveur 
             String acquittement2 = in.readLine(); 
-            System.out.println("Acquittement reçu : " + acquittement2);
+            System.out.println("Acquittement reçu de  " + acquittement2);
 
             S.close();
         }catch (IOException e) {
